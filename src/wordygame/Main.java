@@ -1,0 +1,1519 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+    builded by ABDULLAH MOIZ 
+    github.com/Abdullah-moiz
+ */
+package wordygame;
+
+import java.awt.Color;
+//import java.awt.List;
+import javax.swing.BorderFactory;
+import javax.swing.JOptionPane;
+import javax.swing.SwingConstants;
+import javax.swing.border.Border;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JFrame;
+
+
+/**
+ *
+ * @author Abdullah moiz
+ */
+public class Main extends javax.swing.JFrame {
+
+    /**
+     * Creates new form Main
+     */
+    public Main() {
+        initComponents();
+   
+        //making label text to center so they will look better
+        word_1.setHorizontalAlignment(SwingConstants.CENTER);
+        word_1.setVerticalAlignment(SwingConstants.CENTER);
+        word_2.setHorizontalAlignment(SwingConstants.CENTER);
+        word_2.setVerticalAlignment(SwingConstants.CENTER);
+        word_3.setHorizontalAlignment(SwingConstants.CENTER);
+        word_3.setVerticalAlignment(SwingConstants.CENTER);
+        word_4.setHorizontalAlignment(SwingConstants.CENTER);
+        word_4.setVerticalAlignment(SwingConstants.CENTER);
+        word_5.setHorizontalAlignment(SwingConstants.CENTER);
+        word_5.setVerticalAlignment(SwingConstants.CENTER);
+         word_6.setHorizontalAlignment(SwingConstants.CENTER);
+        word_6.setVerticalAlignment(SwingConstants.CENTER);
+        word_7.setHorizontalAlignment(SwingConstants.CENTER);
+        word_7.setVerticalAlignment(SwingConstants.CENTER);
+        word_8.setHorizontalAlignment(SwingConstants.CENTER);
+        word_8.setVerticalAlignment(SwingConstants.CENTER);
+        word_9.setHorizontalAlignment(SwingConstants.CENTER);
+        word_9.setVerticalAlignment(SwingConstants.CENTER);
+        word_10.setHorizontalAlignment(SwingConstants.CENTER);
+        word_10.setVerticalAlignment(SwingConstants.CENTER);
+        
+         word_11.setHorizontalAlignment(SwingConstants.CENTER);
+        word_11.setVerticalAlignment(SwingConstants.CENTER);
+        word_12.setHorizontalAlignment(SwingConstants.CENTER);
+        word_12.setVerticalAlignment(SwingConstants.CENTER);
+        word_13.setHorizontalAlignment(SwingConstants.CENTER);
+        word_13.setVerticalAlignment(SwingConstants.CENTER);
+        word_14.setHorizontalAlignment(SwingConstants.CENTER);
+        word_14.setVerticalAlignment(SwingConstants.CENTER);
+        word_15.setHorizontalAlignment(SwingConstants.CENTER);
+        word_15.setVerticalAlignment(SwingConstants.CENTER);
+         word_16.setHorizontalAlignment(SwingConstants.CENTER);
+        word_16.setVerticalAlignment(SwingConstants.CENTER);
+        word_17.setHorizontalAlignment(SwingConstants.CENTER);
+        word_17.setVerticalAlignment(SwingConstants.CENTER);
+        word_18.setHorizontalAlignment(SwingConstants.CENTER);
+        word_18.setVerticalAlignment(SwingConstants.CENTER);
+        word_19.setHorizontalAlignment(SwingConstants.CENTER);
+        word_19.setVerticalAlignment(SwingConstants.CENTER);
+        word_20.setHorizontalAlignment(SwingConstants.CENTER);
+        word_20.setVerticalAlignment(SwingConstants.CENTER);
+        
+         word_21.setHorizontalAlignment(SwingConstants.CENTER);
+        word_21.setVerticalAlignment(SwingConstants.CENTER);
+        word_22.setHorizontalAlignment(SwingConstants.CENTER);
+        word_22.setVerticalAlignment(SwingConstants.CENTER);
+        word_23.setHorizontalAlignment(SwingConstants.CENTER);
+        word_23.setVerticalAlignment(SwingConstants.CENTER);
+        word_24.setHorizontalAlignment(SwingConstants.CENTER);
+        word_24.setVerticalAlignment(SwingConstants.CENTER);
+        word_25.setHorizontalAlignment(SwingConstants.CENTER);
+        word_25.setVerticalAlignment(SwingConstants.CENTER);
+         word_26.setHorizontalAlignment(SwingConstants.CENTER);
+        word_26.setVerticalAlignment(SwingConstants.CENTER);
+        word_27.setHorizontalAlignment(SwingConstants.CENTER);
+        word_27.setVerticalAlignment(SwingConstants.CENTER);
+        word_28.setHorizontalAlignment(SwingConstants.CENTER);
+        word_28.setVerticalAlignment(SwingConstants.CENTER);
+        word_29.setHorizontalAlignment(SwingConstants.CENTER);
+        word_29.setVerticalAlignment(SwingConstants.CENTER);
+        word_30.setHorizontalAlignment(SwingConstants.CENTER);
+        word_30.setVerticalAlignment(SwingConstants.CENTER);
+        
+      
+        
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        submit_button = new javax.swing.JButton();
+        type_word = new javax.swing.JTextField();
+        word_1 = new javax.swing.JLabel();
+        word_2 = new javax.swing.JLabel();
+        word_3 = new javax.swing.JLabel();
+        word_4 = new javax.swing.JLabel();
+        word_5 = new javax.swing.JLabel();
+        word_6 = new javax.swing.JLabel();
+        word_7 = new javax.swing.JLabel();
+        word_8 = new javax.swing.JLabel();
+        word_9 = new javax.swing.JLabel();
+        word_10 = new javax.swing.JLabel();
+        word_11 = new javax.swing.JLabel();
+        word_12 = new javax.swing.JLabel();
+        word_13 = new javax.swing.JLabel();
+        word_14 = new javax.swing.JLabel();
+        word_15 = new javax.swing.JLabel();
+        word_16 = new javax.swing.JLabel();
+        word_17 = new javax.swing.JLabel();
+        word_18 = new javax.swing.JLabel();
+        word_19 = new javax.swing.JLabel();
+        word_20 = new javax.swing.JLabel();
+        word_21 = new javax.swing.JLabel();
+        word_22 = new javax.swing.JLabel();
+        word_23 = new javax.swing.JLabel();
+        word_24 = new javax.swing.JLabel();
+        word_25 = new javax.swing.JLabel();
+        word_26 = new javax.swing.JLabel();
+        word_27 = new javax.swing.JLabel();
+        word_28 = new javax.swing.JLabel();
+        word_29 = new javax.swing.JLabel();
+        word_30 = new javax.swing.JLabel();
+
+        jLabel9.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("1");
+
+        jLabel10.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("1");
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.setPreferredSize(new java.awt.Dimension(856, 589));
+        jPanel1.setLayout(null);
+
+        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Wordle Game");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(250, 40, 190, 33);
+
+        submit_button.setBackground(new java.awt.Color(0, 0, 0));
+        submit_button.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        submit_button.setForeground(new java.awt.Color(255, 255, 255));
+        submit_button.setText("Submit");
+        submit_button.setBorder(null);
+        submit_button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        submit_button.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                submit_buttonMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                submit_buttonMouseExited(evt);
+            }
+        });
+        submit_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                submit_buttonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(submit_button);
+        submit_button.setBounds(470, 490, 121, 52);
+
+        type_word.setBackground(new java.awt.Color(0, 0, 0));
+        type_word.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        type_word.setForeground(new java.awt.Color(255, 255, 255));
+        type_word.setText("Type Atleast 5 Charater Word");
+        type_word.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                type_wordMouseClicked(evt);
+            }
+        });
+        jPanel1.add(type_word);
+        type_word.setBounds(50, 490, 340, 52);
+
+        word_1.setBackground(new java.awt.Color(0, 0, 0));
+        word_1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_1.setForeground(new java.awt.Color(255, 255, 255));
+        word_1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_1);
+        word_1.setBounds(50, 110, 100, 50);
+
+        word_2.setBackground(new java.awt.Color(0, 0, 0));
+        word_2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_2.setForeground(new java.awt.Color(255, 255, 255));
+        word_2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_2);
+        word_2.setBounds(160, 110, 100, 50);
+
+        word_3.setBackground(new java.awt.Color(0, 0, 0));
+        word_3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_3.setForeground(new java.awt.Color(255, 255, 255));
+        word_3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_3);
+        word_3.setBounds(270, 110, 100, 50);
+
+        word_4.setBackground(new java.awt.Color(0, 0, 0));
+        word_4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_4.setForeground(new java.awt.Color(255, 255, 255));
+        word_4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_4);
+        word_4.setBounds(380, 110, 100, 50);
+
+        word_5.setBackground(new java.awt.Color(0, 0, 0));
+        word_5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_5.setForeground(new java.awt.Color(255, 255, 255));
+        word_5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_5);
+        word_5.setBounds(490, 110, 100, 50);
+
+        word_6.setBackground(new java.awt.Color(0, 0, 0));
+        word_6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_6.setForeground(new java.awt.Color(255, 255, 255));
+        word_6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_6);
+        word_6.setBounds(50, 170, 100, 50);
+
+        word_7.setBackground(new java.awt.Color(0, 0, 0));
+        word_7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_7.setForeground(new java.awt.Color(255, 255, 255));
+        word_7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_7);
+        word_7.setBounds(160, 170, 100, 50);
+
+        word_8.setBackground(new java.awt.Color(0, 0, 0));
+        word_8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_8.setForeground(new java.awt.Color(255, 255, 255));
+        word_8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_8);
+        word_8.setBounds(270, 170, 100, 50);
+
+        word_9.setBackground(new java.awt.Color(0, 0, 0));
+        word_9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_9.setForeground(new java.awt.Color(255, 255, 255));
+        word_9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_9);
+        word_9.setBounds(380, 170, 100, 50);
+
+        word_10.setBackground(new java.awt.Color(0, 0, 0));
+        word_10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_10.setForeground(new java.awt.Color(255, 255, 255));
+        word_10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_10);
+        word_10.setBounds(490, 170, 100, 50);
+
+        word_11.setBackground(new java.awt.Color(0, 0, 0));
+        word_11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_11.setForeground(new java.awt.Color(255, 255, 255));
+        word_11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_11);
+        word_11.setBounds(50, 230, 100, 50);
+
+        word_12.setBackground(new java.awt.Color(0, 0, 0));
+        word_12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_12.setForeground(new java.awt.Color(255, 255, 255));
+        word_12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_12);
+        word_12.setBounds(160, 230, 100, 50);
+
+        word_13.setBackground(new java.awt.Color(0, 0, 0));
+        word_13.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_13.setForeground(new java.awt.Color(255, 255, 255));
+        word_13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_13);
+        word_13.setBounds(270, 230, 100, 50);
+
+        word_14.setBackground(new java.awt.Color(0, 0, 0));
+        word_14.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_14.setForeground(new java.awt.Color(255, 255, 255));
+        word_14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_14);
+        word_14.setBounds(380, 230, 100, 50);
+
+        word_15.setBackground(new java.awt.Color(0, 0, 0));
+        word_15.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_15.setForeground(new java.awt.Color(255, 255, 255));
+        word_15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_15);
+        word_15.setBounds(490, 230, 100, 50);
+
+        word_16.setBackground(new java.awt.Color(0, 0, 0));
+        word_16.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_16.setForeground(new java.awt.Color(255, 255, 255));
+        word_16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_16);
+        word_16.setBounds(50, 290, 100, 50);
+
+        word_17.setBackground(new java.awt.Color(0, 0, 0));
+        word_17.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_17.setForeground(new java.awt.Color(255, 255, 255));
+        word_17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_17);
+        word_17.setBounds(160, 290, 100, 50);
+
+        word_18.setBackground(new java.awt.Color(0, 0, 0));
+        word_18.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_18.setForeground(new java.awt.Color(255, 255, 255));
+        word_18.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_18);
+        word_18.setBounds(270, 290, 100, 50);
+
+        word_19.setBackground(new java.awt.Color(0, 0, 0));
+        word_19.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_19.setForeground(new java.awt.Color(255, 255, 255));
+        word_19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_19);
+        word_19.setBounds(380, 290, 100, 50);
+
+        word_20.setBackground(new java.awt.Color(0, 0, 0));
+        word_20.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_20.setForeground(new java.awt.Color(255, 255, 255));
+        word_20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_20);
+        word_20.setBounds(490, 290, 100, 50);
+
+        word_21.setBackground(new java.awt.Color(0, 0, 0));
+        word_21.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_21.setForeground(new java.awt.Color(255, 255, 255));
+        word_21.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_21);
+        word_21.setBounds(50, 350, 100, 50);
+
+        word_22.setBackground(new java.awt.Color(0, 0, 0));
+        word_22.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_22.setForeground(new java.awt.Color(255, 255, 255));
+        word_22.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_22);
+        word_22.setBounds(160, 350, 100, 50);
+
+        word_23.setBackground(new java.awt.Color(0, 0, 0));
+        word_23.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_23.setForeground(new java.awt.Color(255, 255, 255));
+        word_23.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_23);
+        word_23.setBounds(270, 350, 100, 50);
+
+        word_24.setBackground(new java.awt.Color(0, 0, 0));
+        word_24.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_24.setForeground(new java.awt.Color(255, 255, 255));
+        word_24.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_24);
+        word_24.setBounds(380, 350, 100, 50);
+
+        word_25.setBackground(new java.awt.Color(0, 0, 0));
+        word_25.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_25.setForeground(new java.awt.Color(255, 255, 255));
+        word_25.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_25);
+        word_25.setBounds(490, 350, 100, 50);
+
+        word_26.setBackground(new java.awt.Color(0, 0, 0));
+        word_26.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_26.setForeground(new java.awt.Color(255, 255, 255));
+        word_26.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_26);
+        word_26.setBounds(50, 410, 100, 50);
+
+        word_27.setBackground(new java.awt.Color(0, 0, 0));
+        word_27.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_27.setForeground(new java.awt.Color(255, 255, 255));
+        word_27.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_27);
+        word_27.setBounds(160, 410, 100, 50);
+
+        word_28.setBackground(new java.awt.Color(0, 0, 0));
+        word_28.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_28.setForeground(new java.awt.Color(255, 255, 255));
+        word_28.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_28);
+        word_28.setBounds(270, 410, 100, 50);
+
+        word_29.setBackground(new java.awt.Color(0, 0, 0));
+        word_29.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_29.setForeground(new java.awt.Color(255, 255, 255));
+        word_29.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_29);
+        word_29.setBounds(380, 410, 100, 50);
+
+        word_30.setBackground(new java.awt.Color(0, 0, 0));
+        word_30.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        word_30.setForeground(new java.awt.Color(255, 255, 255));
+        word_30.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 255), 2, true));
+        jPanel1.add(word_30);
+        word_30.setBounds(490, 410, 100, 50);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 707, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 565, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+    
+    public static int count = 1 ;
+    
+    private void type_wordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_type_wordMouseClicked
+        type_word.setText("");
+        Border okay_color = BorderFactory.createMatteBorder(0,0,3,0,Color.yellow);
+        type_word.setBorder(null);
+        type_word.setBorder(okay_color);
+
+    }//GEN-LAST:event_type_wordMouseClicked
+
+    private void submit_buttonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_submit_buttonMouseExited
+        submit_button.setBackground(Color.black);
+        submit_button.setForeground(Color.white);
+    }//GEN-LAST:event_submit_buttonMouseExited
+
+    private void submit_buttonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_submit_buttonMouseEntered
+        submit_button.setBackground(Color.yellow);
+        submit_button.setForeground(Color.black);
+    }//GEN-LAST:event_submit_buttonMouseEntered
+
+    
+    //random generator
+    private static List<String> lines = null;
+    static
+    {
+        try{
+            lines = Files.readAllLines(new File("D:\\LEARNING\\WordyGame\\src\\wordygame\\targetWords.txt").toPath());
+            
+        } catch (IOException ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    private Random rand = new Random();
+    public String getRandom()
+    {
+        return lines.get(rand.nextInt(lines.size()));
+    }
+    
+    public String check_word = getRandom();
+    private void submit_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submit_buttonActionPerformed
+   
+      
+            System.out.println(check_word);
+            //getting random string from
+        
+  
+  
+        System.out.println("random word is "+check_word);
+ 
+    //getting user input from textfield
+     
+     
+     //tp count limited attempts
+     
+     String take_word = type_word.getText().toLowerCase().toString();
+     System.out.println("user inpur is "+take_word);
+     //dividing word into char and then each char to strings
+     //user input word 
+      char first = take_word.charAt(0);
+      String first1 =  String.valueOf(first);
+      char second = take_word.charAt(1);
+      String second1 =  String.valueOf(second);
+      char third = take_word.charAt(2);
+      String third1 =  String.valueOf(third);
+      char fourth = take_word.charAt(3);
+      String fourth1 =  String.valueOf(fourth);
+      char fifth = take_word.charAt(4);
+      String fifth1 =  String.valueOf(fifth);
+      
+      //random word from file
+      
+      char first2 = check_word.charAt(0);
+      String first22 =  String.valueOf(first2);
+      char second2 = check_word.charAt(1);
+      String second22 =  String.valueOf(second2);
+      char third2 = check_word.charAt(2);
+      String third22 =  String.valueOf(third2);
+      char fourth2 = check_word.charAt(3);
+      String fourth22 =  String.valueOf(fourth2);
+      char fifth2 = check_word.charAt(4);
+      String fifth22 =  String.valueOf(fifth2);
+      
+      
+      
+      
+     
+    if(take_word.length() < 6 ) 
+    {
+        if(count==1)
+        {
+            
+        if(first1.trim().equals(first22))
+        {
+                          word_1.setText(first1);
+                          word_1.setForeground(Color.green);
+                          Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                          word_1.setBorder(change_color);
+                      
+        }
+        else if(check_word.contains(first1))
+        {
+            word_1.setText(first1);
+            word_1.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_1.setBorder(change_color);
+        }
+        else
+        {
+            
+//            JOptionPane.showMessageDialog(this,"Char 1 doesnt match");
+            word_1.setText(first1);
+            word_1.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_1.setBorder(change_color);
+           
+        }
+        
+         if(second1.trim().equals(second22))
+        {
+
+                          word_2.setText(second1);
+                           word_2.setForeground(Color.green);
+                           Border change_color1 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_2.setBorder(change_color1);
+                      
+        }
+          else if(check_word.contains(second1))
+        {
+            word_2.setText(second1);
+            word_2.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_1.setBorder(change_color);
+        }
+         else
+         {
+            
+//             JOptionPane.showMessageDialog(this,"Char 2 doesnt match");
+             word_2.setText(second1);
+            word_2.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_2.setBorder(change_color);
+             
+         }
+        if(third1.trim().equals(third22))
+        {
+                          
+                          word_3.setText(third1);
+                           word_3.setForeground(Color.green);
+                           Border change_color2 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_3.setBorder(change_color2);
+                          
+        }
+         else if(check_word.contains(third1))
+        {
+            word_3.setText(third1);
+            word_3.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_3.setBorder(change_color);
+        }
+        else
+        {
+           
+//            JOptionPane.showMessageDialog(this,"Char 3 doesnt match");
+            word_3.setText(third1);
+            word_3.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_3.setBorder(change_color);
+            
+            
+        }
+                
+        if(fourth1.trim().equals(fourth22))                
+        {
+                         
+                          word_4.setText(fourth1);
+                           word_4.setForeground(Color.green);
+                           Border change_color3 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_4.setBorder(change_color3);
+                         
+                          
+        }
+         else if(check_word.contains(fourth1))
+        {
+            word_4.setText(fourth1);
+            word_4.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_4.setBorder(change_color);
+        }
+        else
+        {
+        
+              word_4.setText(fourth1);
+            word_4.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_4.setBorder(change_color);
+//            JOptionPane.showMessageDialog(this,"Char 4 doesnt match");
+            
+        }
+        if(fifth1.trim().equals(fifth22))
+         {
+                         
+                          word_5.setText(fifth1);
+                           word_5.setForeground(Color.green);
+                           Border change_color4 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_5.setBorder(change_color4);
+                          //displaying charchter on GUI
+                         
+        }   
+         else if(check_word.contains(fifth1))
+        {
+            word_5.setText(fifth1);
+            word_5.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_5.setBorder(change_color);
+        }
+        else
+            {
+//                JOptionPane.showMessageDialog(this,"char 5 doesnt  match");
+               
+                 word_5.setText(fifth1);
+            word_5.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_5.setBorder(change_color);
+            }
+         if(first1.trim().equals(first22) && second1.trim().equals(second22) && third1.trim().equals(third22) && fourth1.trim().equals(fourth22) && fifth1.trim().equals(fifth22))
+        {
+              JOptionPane.showMessageDialog(this,"Congrats you guessed the word correctly");
+              JOptionPane.showMessageDialog(this,"You guess the word in "+count +"attempts");
+              JOptionPane.showMessageDialog(this,"HAVE A GOOD DAY!!!");
+              dispose();
+        }
+        count++;
+        }
+         
+         
+         //second row
+         else if(count==2)
+         {
+        if(first1.trim().equals(first22))
+        {
+                          word_6.setText(first1);
+                          word_6.setForeground(Color.green);
+                          Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                          word_6.setBorder(change_color);
+                       
+        }
+         else if(check_word.contains(first1))
+        {
+            word_6.setText(first1);
+            word_6.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_6.setBorder(change_color);
+        }
+        else
+        {
+             word_6.setText(first1);
+            word_6.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_6.setBorder(change_color);
+           
+           
+        }
+        
+         if(second1.trim().equals(second22))
+        {
+
+                          word_7.setText(second1);
+                           word_7.setForeground(Color.green);
+                           Border change_color1 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_7.setBorder(change_color1);
+                      
+        }
+          else if(check_word.contains(second1))
+        {
+            word_7.setText(second1);
+            word_7.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_7.setBorder(change_color);
+        }
+         else
+         {
+             word_7.setText(second1);
+            word_7.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_7.setBorder(change_color);
+            
+             
+         }
+        if(third1.trim().equals(third22))
+        {
+                          
+                          word_8.setText(third1);
+                           word_8.setForeground(Color.green);
+                           Border change_color2 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_8.setBorder(change_color2);
+                          
+        }
+         else if(check_word.contains(third1))
+        {
+            word_8.setText(third1);
+            word_8.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_8.setBorder(change_color);
+        }
+        else
+        {
+           
+            
+             word_8.setText(third1);
+            word_8.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_8.setBorder(change_color);
+            
+        }
+                
+        if(fourth1.trim().equals(fourth22))                
+        {
+                         
+                          word_9.setText(fourth1);
+                           word_9.setForeground(Color.green);
+                           Border change_color3 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_9.setBorder(change_color3);
+                         
+                          
+        }
+         else if(check_word.contains(fourth1))
+        {
+            word_9.setText(fourth1);
+            word_9.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_9.setBorder(change_color);
+        }
+        else
+        {
+         word_9.setText(fourth1);
+            word_9.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_9.setBorder(change_color);
+            
+           
+            
+        }
+        if(fifth1.trim().equals(fifth22))
+         {
+                         
+                          word_10.setText(fifth1);
+                           word_10.setForeground(Color.green);
+                           Border change_color4 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_10.setBorder(change_color4);
+                          //displaying charchter on GUI
+                         
+        }   
+         else if(check_word.contains(fifth1))
+        {
+            word_10.setText(fifth1);
+            word_10.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_10.setBorder(change_color);
+        }
+        else
+            {
+                 word_10.setText(fifth1);
+            word_10.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_10.setBorder(change_color);
+               
+               
+            }
+         if(first1.trim().equals(first22) && second1.trim().equals(second22) && third1.trim().equals(third22) && fourth1.trim().equals(fourth22) && fifth1.trim().equals(fifth22))
+        {
+              JOptionPane.showMessageDialog(this,"Congrats you guessed the word correctly");
+              JOptionPane.showMessageDialog(this,"You guess the word in "+count +"attempts");
+              JOptionPane.showMessageDialog(this,"HAVE A GOOD DAY!!!");
+              dispose();
+        }
+         count++;
+         }
+         
+         //third row
+         else if(count==3)
+         {
+             
+             if(first1.trim().equals(first22))
+        {
+                          word_11.setText(first1);
+                          word_11.setForeground(Color.green);
+                          Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                          word_11.setBorder(change_color);
+                       
+        }
+              else if(check_word.contains(first1))
+        {
+            word_11.setText(first1);
+            word_11.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_11.setBorder(change_color);
+        }
+        else
+        {
+            
+//            JOptionPane.showMessageDialog(this,"Char 1 doesnt match");
+            word_11.setText(first1);
+            word_11.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_11.setBorder(change_color);
+           
+        }
+        
+         if(second1.trim().equals(second22))
+        {
+
+                          word_12.setText(second1);
+                           word_12.setForeground(Color.green);
+                           Border change_color1 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_12.setBorder(change_color1);
+                      
+        }
+          else if(check_word.contains(second1))
+        {
+            word_12.setText(first1);
+            word_12.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_12.setBorder(change_color);
+        }
+         else
+         {
+            
+//             JOptionPane.showMessageDialog(this,"Char 2 doesnt match");
+             word_12.setText(second1);
+            word_12.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_12.setBorder(change_color);
+             
+         }
+        if(third1.trim().equals(third22))
+        {
+                          
+                          word_13.setText(third1);
+                           word_13.setForeground(Color.green);
+                           Border change_color2 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_13.setBorder(change_color2);
+                          
+        }
+         else if(check_word.contains(third1))
+        {
+            word_13.setText(third1);
+            word_13.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_13.setBorder(change_color);
+        }
+        else
+        {
+           
+//            JOptionPane.showMessageDialog(this,"Char 3 doesnt match");
+            word_13.setText(third1);
+            word_13.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_13.setBorder(change_color);
+            
+            
+        }
+                
+        if(fourth1.trim().equals(fourth22))                
+        {
+                         
+                          word_14.setText(fourth1);
+                           word_14.setForeground(Color.green);
+                           Border change_color3 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_14.setBorder(change_color3);
+                         
+                          
+        }
+         else if(check_word.contains(fourth1))
+        {
+            word_14.setText(fourth1);
+            word_14.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_14.setBorder(change_color);
+        }
+        else
+        {
+        
+              word_14.setText(fourth1);
+            word_14.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_14.setBorder(change_color);
+//            JOptionPane.showMessageDialog(this,"Char 4 doesnt match");
+            
+        }
+        if(fifth1.trim().equals(fifth22))
+         {
+                         
+                          word_15.setText(fifth1);
+                           word_15.setForeground(Color.green);
+                           Border change_color4 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_15.setBorder(change_color4);
+                          //displaying charchter on GUI
+                         
+        }   
+         else if(check_word.contains(fifth1))
+        {
+            word_15.setText(fifth1);
+            word_15.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_15.setBorder(change_color);
+        }
+        else
+            {
+//                JOptionPane.showMessageDialog(this,"char 5 doesnt  match");
+               
+                 word_15.setText(fifth1);
+            word_15.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_15.setBorder(change_color);
+            }
+         if(first1.trim().equals(first22) && second1.trim().equals(second22) && third1.trim().equals(third22) && fourth1.trim().equals(fourth22) && fifth1.trim().equals(fifth22))
+        {
+              JOptionPane.showMessageDialog(this,"Congrats you guessed the word correctly");
+              JOptionPane.showMessageDialog(this,"You guess the word in "+count +"attempts");
+              JOptionPane.showMessageDialog(this,"HAVE A GOOD DAY!!!");
+              dispose();
+        }
+         count++;
+         }
+         
+         
+         //fourth row
+         else if(count==4)
+         {
+             if(first1.trim().equals(first22))
+        {
+                          word_16.setText(first1);
+                          word_16.setForeground(Color.green);
+                          Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                          word_16.setBorder(change_color);
+                       
+        }
+              else if(check_word.contains(first1))
+        {
+            word_16.setText(first1);
+            word_16.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_16.setBorder(change_color);
+        }
+        else
+        {
+            
+//            JOptionPane.showMessageDialog(this,"Char 1 doesnt match");
+            word_16.setText(first1);
+            word_16.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_16.setBorder(change_color);
+           
+        }
+        
+         if(second1.trim().equals(second22))
+        {
+
+                          word_17.setText(second1);
+                           word_17.setForeground(Color.green);
+                           Border change_color1 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_17.setBorder(change_color1);
+                      
+        }
+          else if(check_word.contains(second1))
+        {
+            word_17.setText(second1);
+            word_17.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_17.setBorder(change_color);
+        }
+         else
+         {
+            
+//             JOptionPane.showMessageDialog(this,"Char 2 doesnt match");
+             word_17.setText(second1);
+            word_17.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_17.setBorder(change_color);
+             
+         }
+        if(third1.trim().equals(third22))
+        {
+                          
+                          word_18.setText(third1);
+                           word_18.setForeground(Color.green);
+                           Border change_color2 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_18.setBorder(change_color2);
+                          
+        }
+         else if(check_word.contains(third1))
+        {
+            word_18.setText(third1);
+            word_18.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_18.setBorder(change_color);
+        }
+        else
+        {
+           
+//            JOptionPane.showMessageDialog(this,"Char 3 doesnt match");
+            word_18.setText(third1);
+            word_18.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_18.setBorder(change_color);
+            
+            
+        }
+                
+        if(fourth1.trim().equals(fourth22))                
+        {
+                         
+                          word_19.setText(fourth1);
+                           word_19.setForeground(Color.green);
+                           Border change_color3 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_19.setBorder(change_color3);
+                         
+                          
+        }
+         else if(check_word.contains(fourth1))
+        {
+            word_19.setText(fourth1);
+            word_19.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_19.setBorder(change_color);
+        }
+        else
+        {
+        
+              word_19.setText(fourth1);
+            word_19.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_19.setBorder(change_color);
+//            JOptionPane.showMessageDialog(this,"Char 4 doesnt match");
+            
+        }
+        if(fifth1.trim().equals(fifth22))
+         {
+                         
+                          word_20.setText(fifth1);
+                           word_20.setForeground(Color.green);
+                           Border change_color4 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_20.setBorder(change_color4);
+                          //displaying charchter on GUI
+                         
+        }   
+         else if(check_word.contains(fifth1))
+        {
+            word_20.setText(fifth1);
+            word_20.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_20.setBorder(change_color);
+        }
+        else
+            {
+//                JOptionPane.showMessageDialog(this,"char 5 doesnt  match");
+               
+                 word_20.setText(fifth1);
+            word_20.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_20.setBorder(change_color);
+            }
+         if(first1.trim().equals(first22) && second1.trim().equals(second22) && third1.trim().equals(third22) && fourth1.trim().equals(fourth22) && fifth1.trim().equals(fifth22))
+        {
+              JOptionPane.showMessageDialog(this,"Congrats you guessed the word correctly");
+              JOptionPane.showMessageDialog(this,"You guess the word in "+count +"attempts");
+              JOptionPane.showMessageDialog(this,"HAVE A GOOD DAY!!!");
+              dispose();
+        }
+         count++;
+         }
+        
+         
+         //5th row
+         else if(count==5)
+         {
+         
+             if(first1.trim().equals(first22))
+        {
+                          word_21.setText(first1);
+                          word_21.setForeground(Color.green);
+                          Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                          word_21.setBorder(change_color);
+                       
+        }
+              else if(check_word.contains(first1))
+        {
+            word_21.setText(first1);
+            word_21.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_21.setBorder(change_color);
+        }
+        else
+        {
+            
+//            JOptionPane.showMessageDialog(this,"Char 1 doesnt match");
+            word_21.setText(first1);
+            word_21.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_21.setBorder(change_color);
+           
+        }
+        
+         if(second1.trim().equals(second22))
+        {
+
+                          word_22.setText(second1);
+                           word_22.setForeground(Color.green);
+                           Border change_color1 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_22.setBorder(change_color1);
+                      
+        }
+          else if(check_word.contains(second1))
+        {
+            word_22.setText(second1);
+            word_22.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_22.setBorder(change_color);
+        }
+         else
+         {
+            
+//             JOptionPane.showMessageDialog(this,"Char 2 doesnt match");
+             word_22.setText(second1);
+            word_22.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_22.setBorder(change_color);
+             
+         }
+        if(third1.trim().equals(third22))
+        {
+                          
+                          word_23.setText(third1);
+                           word_23.setForeground(Color.green);
+                           Border change_color2 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_23.setBorder(change_color2);
+                          
+        }
+         else if(check_word.contains(third1))
+        {
+            word_23.setText(third1);
+            word_23.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_23.setBorder(change_color);
+        }
+        else
+        {
+           
+//            JOptionPane.showMessageDialog(this,"Char 3 doesnt match");
+            word_23.setText(third1);
+            word_23.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_23.setBorder(change_color);
+            
+            
+        }
+                
+        if(fourth1.trim().equals(fourth22))                
+        {
+                         
+                          word_24.setText(fourth1);
+                           word_24.setForeground(Color.green);
+                           Border change_color3 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_24.setBorder(change_color3);
+                         
+                          
+        }
+         else if(check_word.contains(fourth1))
+        {
+            word_24.setText(fourth1);
+            word_24.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_24.setBorder(change_color);
+        }
+        else
+        {
+        
+              word_24.setText(fourth1);
+            word_24.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_24.setBorder(change_color);
+//            JOptionPane.showMessageDialog(this,"Char 4 doesnt match");
+            
+        }
+        if(fifth1.trim().equals(fifth22))
+         {
+                         
+                          word_25.setText(fifth1);
+                           word_25.setForeground(Color.green);
+                           Border change_color4 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_25.setBorder(change_color4);
+                          //displaying charchter on GUI
+                         
+        }   
+         else if(check_word.contains(fifth1))
+        {
+            word_25.setText(fifth1);
+            word_25.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_1.setBorder(change_color);
+        }
+        else
+            {
+//                JOptionPane.showMessageDialog(this,"char 5 doesnt  match");
+               
+                 word_25.setText(fifth1);
+            word_25.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_25.setBorder(change_color);
+            }
+         if(first1.trim().equals(first22) && second1.trim().equals(second22) && third1.trim().equals(third22) && fourth1.trim().equals(fourth22) && fifth1.trim().equals(fifth22))
+        {
+              JOptionPane.showMessageDialog(this,"Congrats you guessed the word correctly");
+              JOptionPane.showMessageDialog(this,"You guess the word in "+count +"attempts");
+              JOptionPane.showMessageDialog(this,"HAVE A GOOD DAY!!!");
+              dispose();
+        }
+         count++;
+         }
+         
+         
+         
+         //last row
+         else if(count==6)
+         {
+             if(first1.trim().equals(first22))
+        {
+                          word_26.setText(first1);
+                          word_26.setForeground(Color.green);
+                          Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                          word_26.setBorder(change_color);
+                       
+        }
+              else if(check_word.contains(first1))
+        {
+            word_26.setText(first1);
+            word_26.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_26.setBorder(change_color);
+        }
+        else
+        {
+            
+//            JOptionPane.showMessageDialog(this,"Char 1 doesnt match");
+            word_26.setText(first1);
+            word_26.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_26.setBorder(change_color);
+           
+        }
+        
+         if(second1.trim().equals(second22))
+        {
+
+                          word_27.setText(second1);
+                           word_27.setForeground(Color.green);
+                           Border change_color1 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_27.setBorder(change_color1);
+                      
+        }
+          else if(check_word.contains(second1))
+        {
+            word_27.setText(second1);
+            word_27.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_27.setBorder(change_color);
+        }
+         else
+         {
+            
+//             JOptionPane.showMessageDialog(this,"Char 2 doesnt match");
+             word_27.setText(second1);
+            word_27.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_27.setBorder(change_color);
+             
+         }
+        if(third1.trim().equals(third22))
+        {
+                          
+                          word_28.setText(third1);
+                           word_28.setForeground(Color.green);
+                           Border change_color2 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_28.setBorder(change_color2);
+                          
+        }
+         else if(check_word.contains(third1))
+        {
+            word_28.setText(third1);
+            word_28.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_28.setBorder(change_color);
+        }
+        else
+        {
+           
+//            JOptionPane.showMessageDialog(this,"Char 3 doesnt match");
+            word_28.setText(third1);
+            word_28.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_28.setBorder(change_color);
+            
+            
+        }
+                
+        if(fourth1.trim().equals(fourth22))                
+        {
+                         
+                          word_29.setText(fourth1);
+                           word_29.setForeground(Color.green);
+                           Border change_color3 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_29.setBorder(change_color3);
+                         
+                          
+        }
+         else if(check_word.contains(fourth1))
+        {
+            word_29.setText(fourth1);
+            word_29.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_29.setBorder(change_color);
+        }
+        else
+        {
+        
+              word_29.setText(fourth1);
+            word_29.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_29.setBorder(change_color);
+//            JOptionPane.showMessageDialog(this,"Char 4 doesnt match");
+            
+        }
+        if(fifth1.trim().equals(fifth22))
+         {
+                         
+                          word_30.setText(fifth1);
+                           word_30.setForeground(Color.green);
+                           Border change_color4 = BorderFactory.createMatteBorder(3,3,3,3,Color.green);
+                           word_30.setBorder(change_color4);
+                          //displaying charchter on GUI
+                         
+        }  
+         else if(check_word.contains(fifth1))
+        {
+            word_30.setText(fifth1);
+            word_30.setForeground(Color.orange);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.orange);
+                          word_30.setBorder(change_color);
+        }
+        else
+            {
+//                JOptionPane.showMessageDialog(this,"char 5 doesnt  match");
+               
+                 word_30.setText(fifth1);
+            word_30.setForeground(Color.red);
+             Border change_color = BorderFactory.createMatteBorder(3,3,3,3,Color.red);
+                          word_30.setBorder(change_color);
+            }
+         if(first1.trim().equals(first22) && second1.trim().equals(second22) && third1.trim().equals(third22) && fourth1.trim().equals(fourth22) && fifth1.trim().equals(fifth22))
+        {
+              JOptionPane.showMessageDialog(this,"Congrats you guessed the word correctly");
+              JOptionPane.showMessageDialog(this,"You guess the word in "+count +"attempts");
+              JOptionPane.showMessageDialog(this,"HAVE A GOOD DAY!!!");
+              dispose();
+        }
+         count++;
+         }
+         //code if all are good
+         
+         else
+         {
+                 JOptionPane.showMessageDialog(this,"Guess Limited reached that is 6 attempts");
+               JOptionPane.showMessageDialog(this,"The word to be guessed it "+check_word);
+               JOptionPane.showMessageDialog(this,"YOU LOSE !!!");
+               dispose();
+         }
+         
+      
+       
+//        if(count == 6)
+//        {
+//            
+//                
+//               JOptionPane.showMessageDialog(this,"Guess Limited reached that is 6 attempts");
+//               JOptionPane.showMessageDialog(this,"The word to be guessed it "+check_word);
+//               JOptionPane.showMessageDialog(this,"YOU LOSE !!!");
+//               dispose();
+//               
+//        }
+    }
+    else
+        {
+         JOptionPane.showMessageDialog(this,"only 5 char word are allowed Number");
+         } 
+    //to display attempts
+        System.out.println(count);
+        String w = String.valueOf(count);
+       
+
+
+
+        
+      
+    }//GEN-LAST:event_submit_buttonActionPerformed
+   
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) throws FileNotFoundException, IOException {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        
+        
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Main().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton submit_button;
+    private javax.swing.JTextField type_word;
+    private javax.swing.JLabel word_1;
+    private javax.swing.JLabel word_10;
+    private javax.swing.JLabel word_11;
+    private javax.swing.JLabel word_12;
+    private javax.swing.JLabel word_13;
+    private javax.swing.JLabel word_14;
+    private javax.swing.JLabel word_15;
+    private javax.swing.JLabel word_16;
+    private javax.swing.JLabel word_17;
+    private javax.swing.JLabel word_18;
+    private javax.swing.JLabel word_19;
+    private javax.swing.JLabel word_2;
+    private javax.swing.JLabel word_20;
+    private javax.swing.JLabel word_21;
+    private javax.swing.JLabel word_22;
+    private javax.swing.JLabel word_23;
+    private javax.swing.JLabel word_24;
+    private javax.swing.JLabel word_25;
+    private javax.swing.JLabel word_26;
+    private javax.swing.JLabel word_27;
+    private javax.swing.JLabel word_28;
+    private javax.swing.JLabel word_29;
+    private javax.swing.JLabel word_3;
+    private javax.swing.JLabel word_30;
+    private javax.swing.JLabel word_4;
+    private javax.swing.JLabel word_5;
+    private javax.swing.JLabel word_6;
+    private javax.swing.JLabel word_7;
+    private javax.swing.JLabel word_8;
+    private javax.swing.JLabel word_9;
+    // End of variables declaration//GEN-END:variables
+}
